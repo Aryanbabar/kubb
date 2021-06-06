@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    background: ;
+}
+
+/* back-to-top css */
+.back-to-top{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    display: none;
+}
+.back-to-top i{
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+/* ---------common css end----------- */
+/* preloader css start */
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    /*change these sizes to fit into your project*/
+    width:100px;
+    height:100px;
+  }
+
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+
+
+/* ===== header-area css start =====*/
+header{
+     background-color: rgba(0,0,0,0.6); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.bg{
+    background: rgb(36, 34, 34);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    animation: bg 1s;
+}
+@keyframes bg{
+    from{top: -50px;}
+    to{top: 0;}
+}
+
+.logo-area{
+    float: left;
+    width: 30%;
+}
+.logo-area{
+    padding-top: 34px;
+}
+.main-menu{
+    float: left;
+    width: 70%;
+}
+.main-menu ul{
+    text-align: end;
+}
+.main-menu ul li{
+    display: inline-block;
+}
+.main-menu ul li a{
+    color: #fff;
+    font-size: 14px;
+    padding: 0 22px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    line-height: 90px;
+}
+.main-menu ul li:last-child a{
+    padding-right: 0;
+}
+.main-menu ul li a.active,
+.main-menu ul li:hover > a{
+    color: #28b8d8;
+}
+/* header-area css end */
+
+/* banner-area start */
+#banner-area{
+    background: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 320px;
+    padding-bottom: 245px;
+    position: relative;
+}
+.banner-title{
+    text-align: center;
+}
+.banner-title h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+.banner-title h3{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 6px;
+}
+.banner-title p{
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+/* banner-area end */
+
+/* intro-area css start */
+#intro-area{}
+.intro-content{
+    text-align: center;
+}
+.intro-content h2{
+    color: #444;
+    padding-top: 72px;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+.intro-content p{
+    color: #666;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-bottom: 75px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+}
+/* intro-area css end */
+
+/* services area start */
+#services{}
+.head{
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.head h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: #444;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.service-main{
+    padding-bottom: 83px;
+}
+.service-item{
+    width: 370px;
+    float: left;
+    padding: 15px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+}
+.service-item h3{
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    color:#444;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+.service-item p{
+    font-size: 14px;
+    font-family: 'Roboto', serif;
+    color:#666;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.mid-serv{
+    margin: 0 30px;
+}
+/* services area end */
+
+/* gallery-area css start */
+#gallery-area{
+    background-color: #2c2c2c;
+    padding-top: 51px;
+    padding-bottom: 65px;
+}
+#gallery-area .head h2{
+    color: #d5d5d5;
+    position: relative;
+    display: inline-block;
+}
+#gallery-area .head h2::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    top: 50%;
+    left: -115px;
+    transform: translateY(-50%);
+}
+#gallery-area .head h2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+}
+.gallery-item{
+    width: 25%;
+    float: left;
+}
+.gallery-item img{
+    width: 100%;
+}
+.gallery-item a{
+    color: #8e8e8e;
+}
+.insta-btn{
+    text-align: center;
+    padding-top: 77px;
+}
+.insta-btn a{
+    border: 1px solid #797979;
+    padding: 16px 20px;
+    color: #a6a6a6;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+}
+.insta-btn a:hover{
+    background: #28b8d8;
+    color: #fff;
+    border-color: #28b8d8;
+}
+/* gallery-area css end */
+
+
+/* journal-area start */
+#journal{
+  
+}
+#journal .head{
+    padding-top: 72px;
+}
+#journal .head h2{
+    display: inline-block;
+    position: relative;
+}
+#journal .head h2::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    top: 50%;
+    left: -115px;
+    transform: translateY(-50%);
+}
+#journal .head h2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+}
+.journal-item{
+    width: 370px;
+    float: left;
+    border: 1px solid #e3e3e3;
+}
+.journal-item .journal-title{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 22px;
+}
+.journal-item .journal-title h4{
+    color: #444;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-family: 'RobotoSlab', sans-serif;
+    font-weight: 700;
+}
+.journal-item .journal-title p{
+    color: #999;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.journal-item .jounal-content{
+    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.journal-item .jounal-content p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.journal-item .jounal-content a{
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #28b8d8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.journal-item .jounal-content span{
+    float: right;
+    color: #999;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* journal-area end */
+
+
+
+
+/* about-me area start */
+#aboutme{
+    padding-top: 80px;
+    padding-bottom: 75px;
+}
+.aboutme-left{
+    width: 570px;
+    float: left;
+    margin-right: 30px;
+}
+#aboutme .head{
+    text-align: left;
+}
+#aboutme .head h2{
+    display: inline-block;
+    position: relative;
+}
+#aboutme .head h2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+}
+.aboutme-right{
+    width: 570px;
+    float: left;
+}
+.about-img{
+    width: 196px;
+    float: left;
+    margin-right: 30px;
+}
+.about-text{}
+.about-text h5{
+    font-size: 18px;
+    color: #666;
+    line-height: 28px;
+    font-family: 'RobotoSlab', sans-serif;
+    font-weight: 300;
+}
+.about-text p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    padding-top: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.icons{
+    width: 52px;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+}
+.other-service-info{
+    width: 493px;
+    float: left;
+}
+.other-service-info h3{
+    font-size: 17px;
+    color: #444;
+    padding-bottom: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+.other-service-info p{
+    font-size: 14px;
+    color: #666;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+.other-services{
+    padding-bottom: 18px;
+}
+/* about-me area end */
+
+/* footer-area start */
+#footer{
+    background-color: #373737;
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+.footer-item{
+    width: 255px;
+    float: left;
+    margin-right: 50px;
+}
+.footer-item h3{
+    color: #f0f0f0;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+.footer-item P{
+    color: #cacaca;
+    font-size: 14px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+.xtra1{
+    padding-top: 22px;
+}
+.xtra1 a{
+    color: #cacaca;
+}
+.mr-none{
+    margin-right: 0;
+}
+/* footer-area end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* copyright-area css start */
+#copyright-area{
+    background: #333333;
+}
+.copyright-content p{
+    line-height: 90px;
+    color: #cacaca;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+}
+/* copyright-area css end */
+
